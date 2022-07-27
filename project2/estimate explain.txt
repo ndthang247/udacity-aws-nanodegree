@@ -1,0 +1,14 @@
+- Initial cost estimate
+    https://calculator.aws/#/estimate?id=515bf875959300c96b1ad03c2249e4063e4484e1 
+    9,008.37 USD / month
+
+- Reduced estimate
+    https://calculator.aws/#/estimate?id=4174ab1e8761de6e82b2c1ca44308df42b05ee18
+    6,330.82 USD / month
+  - Reduced number of EC2 maximum is 10.
+  - Reduced the instance size of RDS Mysql instances.
+- Increased estimate 
+    https://calculator.aws/#/estimate?id=b59514e07bf92fcc9b2cfc720b8ae94ab34137e0 
+    19,675.02 USD / month
+  - Added a secondary region for more redundancy and better performance.
+  - Increased server instance sizes for better performance
