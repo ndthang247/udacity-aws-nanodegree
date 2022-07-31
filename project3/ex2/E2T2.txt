@@ -1,0 +1,7 @@
+
+- Ensure MFA is enabled for the "root" account
+- Ensure no security groups allow ingress from 0.0.0.0/0 to port 22
+- Ensure VPC flow logging is enabled in all VPCs
+- EC2 instance "Web Service Instance - C3": disable password authentication over SSH and enable support for key-based authentication instead. 
+- EC2 instance "Web Service Instance - C3": TCP port 22, which is associated with SSH, is reachable from the internet with a process listening on the port => remove access from the internet on port 22
+- Should use SSM to manage EC2 instances

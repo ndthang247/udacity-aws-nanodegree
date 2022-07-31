@@ -1,0 +1,19 @@
+# Poor practice 1
+-security group WebAppSG allows all traffic from all protocol to all port range.
+-WebAppSG should allow access port 5000 from security group AppLoadBalancerSG (application loadbalancer)
+
+
+# Poor practice 2
+InstanceProfileRole attach to ec2 instance "Web Service Instance - C3" has Policy "InstanceRolePolicy-C3" violates Least Privilege Access
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": "s3:*",
+            "Resource": "*",
+            "Effect": "Allow"
+        }
+    ]
+}
+  - allows full access to all S3 buckets.
+  - should allow access to only the S3 bucket: cand-c3-free-recipes-973767941279, and not any other S3 buckets including cand-c3-secret-recipes-973767941279

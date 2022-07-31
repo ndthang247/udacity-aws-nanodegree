@@ -1,0 +1,8 @@
+# Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
+  - Update the WebAppSG to allow access only from load balancer.
+  - Remove SSH password login from the web service instance
+  - Move the web service instance into the private subnet instead public
+
+# Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+ - Given to a role assigned to privileged business users only.
+ - So even if the instances can access S3, they would not be able to decrypt and read the file.

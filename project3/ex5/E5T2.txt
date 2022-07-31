@@ -1,0 +1,32 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+  - Tools:
+    - Cfripper
+    - Terrascan
+    - Regula
+    - Cloudsploit
+  - Detects misconfigurations in IaC like
+    - Missing encryption (S3, EBS, etc)
+    - Over permissive security groups
+
+### Example vulnerability
+
+##Scan AMI’s or containers for OS vulnerabilities
+  - Tools:
+    - Clair
+    - Anchore
+    - Trivy
+  - Scans container images for known OS vulnerabilities and backdoors
+    - Detects malwares, trojans, etc
+### Example vulnerability
+clair: https://access.redhat.com/webassets/avalon/d/Red_Hat_Quay-3-Manage_Red_Hat_Quay-en-US/images/9dfeae52d0965d6ea2410594fc08ed9b/clair-vulnerabilities.png
+##Scan an AWS environment for cloud configuration vulnerabilities
+  - Tools
+    - AWS GuardDuty: continuosly scans the AWS environment to find attacks, vulnerabilities, etc.
+    - AWS Inspector: runs assessments on AWS resources to detect known vulnerabilities
+    - AWS Security Hub: Aggregates findings from multiple security related AWS services
+    - AWS config: detects configuration vulnerabilities in AWS resources
+    - Prowler: AWS security configuration assessment, auditing and hardening
+### Example vulnerability
+as project 3 - ex3, ex4
